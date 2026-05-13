@@ -61,7 +61,7 @@ const ServiceCard = ({
           </div>
         ) : (
           <div
-            className={`w-12.5 aspect-square rounded-full  bg-[url('${imgUri}')] bg-center bg-cover bg-no-repeat`}
+            className={`w-12.5 aspect-square rounded-full  bg-[url(${imgUri})] bg-center bg-cover bg-no-repeat`}
           />
         )}
 

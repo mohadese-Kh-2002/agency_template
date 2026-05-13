@@ -8,8 +8,8 @@ const Hero = ({title,description}) => {
  
    const base = import.meta.env.BASE_URL;
   const HeroI = siteData.pages;
- const imageUri = `${base.slice(0,base.length-1)}${HeroI[pathname.split('/')[1]]?.hero.backgroundImage}`
-  || `${base}images/hero.png`;
+ const imageUri = `${HeroI[pathname.split('/')[1]]?.hero.backgroundImage}`
+  || `/images/hero.png`;
 
 console.log(`${base.slice(0,base.length-1)}${HeroI[pathname.split('/')[1]]?.hero.backgroundImage}`);
   const CORVEX = "CORVEX";
@@ -19,7 +19,7 @@ console.log(`${base.slice(0,base.length-1)}${HeroI[pathname.split('/')[1]]?.hero
   return (
     <section
       className={`overflow-hidden group relative border border-(--primary) bg-cover h-150 w-full bg-no-repeat bg-center rounded-[36px]`}
-      style={{ backgroundImage: `url(${imageUri})` }}
+      style={{ backgroundImage: `url(${base.slice(0,base.length-1)}${imageUri})` }}
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-xs " />
       <div className="straight-line"></div>
