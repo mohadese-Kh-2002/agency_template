@@ -8,11 +8,10 @@ const Hero = ({title,description}) => {
  
    const base = import.meta.env.BASE_URL;
   const HeroI = siteData.pages;
- const imageUri = `${base}${HeroI[pathname.split('/')[1]]?.hero.backgroundImage}`
+ const imageUri = `${base.pop()}${HeroI[pathname.split('/')[1]]?.hero.backgroundImage}`
   && `${base}images/hero.png`;
- 
-   
-console.log(imageUri);
+
+
   const CORVEX = "CORVEX";
 
   const parts =title.split(new RegExp(`(${CORVEX})`, "gi")) ;
