@@ -1,4 +1,4 @@
-import{j as e,L as r,k as n}from"./index-BvklS3Dc.js";const s=()=>e.jsx("div",{className:"min-h-screen flex items-center justify-center bg-(--bg) px-4",children:e.jsxs("div",{className:`\r
+import{j as e,L as r,k as n}from"./index-DmS_HsH7.js";const s=()=>e.jsx("div",{className:"min-h-screen flex items-center justify-center bg-(--bg) px-4",children:e.jsxs("div",{className:`\r
           relative\r
           w-full max-w-lg\r
           rounded-3xl\r
