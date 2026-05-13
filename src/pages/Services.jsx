@@ -24,7 +24,6 @@ const Services = () => {
   const serviceHero = siteData.pages.services.hero;
   const aboutValue = siteData.about.values;
   const startupProcess=siteData.startupProcess
-  console.log(serviceHero.title);
   return (
     <>
       <SEO

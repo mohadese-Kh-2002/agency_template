@@ -86,7 +86,7 @@ const Contact = () => {
     setCopiedField(field);
     setTimeout(() => setCopiedField(""), 2000);
   };
-console.log(contactHero.title);
+
   return (
     <>
       <SEO

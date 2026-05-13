@@ -28,7 +28,6 @@ const Home = () => {
   const aboutData = siteData.about;
   const concatData=siteData.contact;
   const homeHero=siteData.pages.home.hero;
-  console.log(homeHero.title);
   const stats = siteData.pages.home.stats;
   const [counts, setCounts] = useState(stats.map(() => 0));
   const [hasAnimated, setHasAnimated] = useState(false);

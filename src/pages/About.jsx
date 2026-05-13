@@ -17,7 +17,7 @@ import SEO from "../components/SEO";
 const About = () => {
   const aboutHero = siteData.pages.about_us.hero;
   const about = siteData.about;
-console.log(aboutHero.title);
+
   return (
     <>
       <SEO
