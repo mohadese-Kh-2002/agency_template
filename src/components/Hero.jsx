@@ -8,9 +8,8 @@ const Hero = ({title,description}) => {
  
    const base = import.meta.env.BASE_URL;
   const HeroI = siteData.pages;
- const imageUri = HeroI[pathname.split('/')[1]]?.hero.backgroundImage 
-  ? `${base}${HeroI[pathname.split('/')[1]]?.hero.backgroundImage}`
-  : `${base}images/hero.png`;
+ const imageUri = `${base}${HeroI[pathname.split('/')[1]]?.hero.backgroundImage}`
+  && `${base}images/hero.png`;
  
    
 console.log(imageUri);
