@@ -7,8 +7,8 @@ const PortfolioCard = ({
   id,
   description = "",
 }) => {
-
-  const imageUrl = images && images.length > 0 ? images[0] : "/images/hero.png";
+ const base = import.meta.env.BASE_URL;
+  const imageUrl = images && images.length > 0 ? `${base.slice(0,base.length-1)}${images[0]}` : `${base}images/hero.png`;
 
   return (
     <div className="group relative mx-auto w-full max-w-sm">

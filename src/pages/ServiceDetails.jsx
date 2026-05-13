@@ -46,7 +46,7 @@ const ServiceDetails = () => {
     siteData.services.find((s) => s.id === parseInt(id)) ||
     siteData.services[0];
   const IconComponent = iconsMap[service?.icon] || FaRocket;
-
+ const base = import.meta.env.BASE_URL;
   if (!service) {
     return (
       <Container>
@@ -122,7 +122,7 @@ const ServiceDetails = () => {
                 <div className=" bg-transparent rounded-[36px] p-12 text-center border border-(--border)">
                   {service.imgUri ? (
                     <img
-                      src={service.imgUri}
+                      src={`${base.slice(0,base.length-1)}${service.imgUri}`}
                       alt={service.title}
                       className="w-full h-64 object-cover rounded-2xl mb-6"
                     />

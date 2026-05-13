@@ -17,7 +17,7 @@ import Title from "../components/Title";
 import PortfolioCard from "../components/portfolio/PortfolioCard";
 const PortfolioDetails = () => {
   const { id } = useParams();
-
+ const base = import.meta.env.BASE_URL;
   const portfolioItems = siteData.portfolio;
   const portfolioItem = portfolioItems.find((p) => p.id === Number(id));
   const samePortfolio = portfolioItems.filter(
@@ -106,7 +106,7 @@ const PortfolioDetails = () => {
                   <SwiperSlide key={index}>
                     <div className="relative aspect-video bg-(--surface)">
                       <img
-                        src={img}
+                        src={`${base.slice(0,base.length-1)}${img}`}
                         alt={`${portfolioItem.title} - تصویر ${index + 1}`}
                         className="w-full h-full object-cover"
                       />

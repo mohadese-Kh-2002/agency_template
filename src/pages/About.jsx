@@ -17,7 +17,7 @@ import SEO from "../components/SEO";
 const About = () => {
   const aboutHero = siteData.pages.about_us.hero;
   const about = siteData.about;
-
+ const base = import.meta.env.BASE_URL;
   return (
     <>
       <SEO
@@ -194,7 +194,7 @@ const About = () => {
                             <div className="w-full h-full rounded-full overflow-hidden border-2 border-(--primary) shadow-lg">
                               <img
                               loading="lazy"
-                                src={member.image}
+                                src={`${base.slice(0,base.length-1)}${member.image}`}
                                 alt={member.name}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                               />
