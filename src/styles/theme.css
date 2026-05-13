@@ -1,0 +1,31 @@
+:root {
+  --primary: #059669; 
+  --secondary: #0284c7;        
+  --primary-rgb: 5, 150, 105;
+  --primary-hover: #047857;   
+  
+  --bg: #ecfdf5;            
+  --surface: #ffffff;
+  --border: #a7f3d0;         
+  
+  --text: #064e3b;          
+  --text-muted: #047857;
+}
+
+:root[data-theme="dark"] {
+  --bg: #064e3b;
+  --surface: #065f46;
+  --border: #059669;
+  
+  --text: #ecfdf5;
+  --text-muted: #a7f3d0;
+}
+button.theme-toggle {
+  box-shadow: 0 0 12px rgba(var(--primary-rgb), 0.35);
+}
+
+button.theme-toggle:hover {
+  box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.6);
+}
+
+
