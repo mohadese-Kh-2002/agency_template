@@ -5,8 +5,11 @@ import { useLocation } from "react-router-dom";
 const Hero = ({title,description}) => {
   const {pathname}=useLocation()
   const Hero=siteData.pages
-  const imageUri=Hero[pathname.split('/')[1]]?.hero.backgroundImage ?? '/images/hero.png'
-
+   const base = import.meta.env.BASE_URL;
+  const HeroI = siteData.pages;
+  const imageUri = HeroI[pathname.split('/')[1]]?.hero.backgroundImage 
+    ?? `${base}images/hero.png`;
+console.log(imageUri);
   const CORVEX = "CORVEX";
 
   const parts =title.split(new RegExp(`(${CORVEX})`, "gi")) ;
