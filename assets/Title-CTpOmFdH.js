@@ -1,0 +1,1 @@
+import{j as t}from"./index-BuXhSjN_.js";const r=({title:s,subtitle:x,description:e})=>t.jsxs("div",{children:[t.jsx("span",{className:"text-(--primary) font-medium",children:x}),t.jsx("h3",{className:"text-[20px] sm:text-[30px] font-bold mt-2",children:s}),e&&t.jsx("p",{className:"text-(--text-muted) mt-3",children:e})]});export{r as T};
